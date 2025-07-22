@@ -22,7 +22,7 @@
        <a href="#hero" class="logo">CreativaMente</a>
 
        <button class="nav-toggle" aria-label="Abrir menú">☰</button>
-       
+
        <ul class="nav-links">
             <li><a href="#hero">Inicio</a></li>
             <li><a href="#sobre">Sobre</a></li>
@@ -132,10 +132,16 @@
             <div class="contacto-content">
                 <!-- Formulario -->
                 <div class="contacto-form">
-                    <form>
+                    <form action="https://formspree.io/f/xpwlpaoa" method="POST">
+                        <!-- Honeypot para bots -->
+                        <input type="text" name="_gotcha" style="display:none" />
+
+                        <!-- Si quieres redirigir a una “gracias” dentro de tu web, descomenta y ajusta la URL -->
+                        <!-- <input type="hidden" name="_next" value="https://matis2189.github.io/creativamente-web/#contacto?success=true"> -->
+
                         <div class="form-group">
                             <label for="nombre">Nombre</label>
-                            <input type="text" id="nombre" name="nombre" required />
+                            <input type="text" id="nombre" name="name" required />
                         </div>
                         <div class="form-group">
                             <label for="email">Correo electrónico</label>
@@ -143,10 +149,15 @@
                         </div>
                         <div class="form-group">
                             <label for="mensaje">Mensaje</label>
-                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                            <textarea id="mensaje" name="message" rows="5" required></textarea>
                         </div>
+
+                        <!-- Si quieres copia en tu correo, añade este campo y pon tu dirección -->
+                        <!-- <input type="hidden" name="_cc" value="tucorreo@creativamente.com"> -->
+
                         <button type="submit" class="btn">Enviar Mensaje</button>
                     </form>
+
                 </div>
                 <div class="contacto-redes">
                     <h3>Síguenos</h3>
