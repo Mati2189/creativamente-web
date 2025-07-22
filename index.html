@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CreativaMente</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar">
+      <!-- Aquí irá tu logo y navegación -->
+       <a href="#hero" class="logo">CreativaMente</a>
+
+       <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+       
+       <ul class="nav-links">
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- Sección HERO -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Bienvenido a CreativaMente</h1>
+            <p>Tu espacio para aprender a crear y emprender con creatividad.</p>
+            <a href="#cursos" class="btn">Ver cursos</a>
+        </div>
+    </section>
+
+    <!-- Secciones adicionales -->
+    <section id="sobre" class="section-sobre">
+        <div class="sobre-container">
+            <!-- Imagen/Avatar -->
+            <div class="sobre-image">
+                <img src="assets/img/avatar.svg" alt="Avatar CreativaMente">
+            </div>
+            <!-- Texto de la marca -->
+            <div class="sobre-text">
+                <h2>Sobre CreativaMente</h2>
+                <p>
+                    <!-- Aquí iría tu texto: por ejemplo, la misión, visión y breve historia. -->
+                    Tu espacio para aprender a crear, diseñar y emprender con profesionalismo y creatividad.  
+                    <br><br>
+                    Desde nuestros inicios, nuestro objetivo ha sido…
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cursos" class="section-cursos">
+        <div class="cursos-header">
+            <h2>Nuestros Cursos</h2>
+            <p>Explora nuestros recursos gratuitos y de pago para potenciar tu creatividad.</p>
+        </div>
+        <div class="cursos-grid">
+            <!-- EJEMPLO de tarjeta de curso -->
+             <article class="curso-card">
+                <img src="assets/img/curso1.jpg" alt="Curso 1">
+                <div class="curso-info">
+                    <h3>Título del Curso 1</h3>
+                    <p>Breve descripción que enganche y explique de qué trata el curso.</p>
+                    <a href="#" class="btn">Ver más</a>
+                </div>
+            </article>
+            <!-- Duplica <article> para cada curso -->
+        </div>
+    </section>
+
+    <section id="blog" class="section-blog">
+        <div class="blog-header">
+            <h2>Últimos Artículos</h2>
+            <p>Descubre nuestros posts más recientes sobre creatividad y emprendimiento.</p>
+        </div>
+        <div class="blog-grid">
+            <!-- EJEMPLO de tarjeta de artículo -->
+            <article class="blog-card">
+                <img src="assets/img/blog1.jpg" alt="Título artículo 1">
+                <div class="blog-info">
+                    <h3>Título del Artículo 1</h3>
+                    <p>Un resumen breve que despierte el interés del lector para hacer clic.</p>
+                    <a href="#" class="btn">Leer más</a>
+                </div>
+            </article>
+            <!-- Artículo 2 -->
+            <article class="blog-card">
+                <img src="assets/img/blog2.jpg" alt="Artículo 2">
+                <div class="blog-info">
+                    <h3>Título del Artículo 2</h3>
+                    <p>Resumen breve del segundo artículo para despertar curiosidad.</p>
+                    <a href="#" class="btn">Leer más</a>
+                </div>
+            </article>
+
+            <!-- Artículo 3 -->
+            <article class="blog-card">
+                <img src="assets/img/blog3.jpg" alt="Artículo 3">
+                <div class="blog-info">
+                    <h3>Título del Artículo 3</h3>
+                    <p>Resumen breve del tercer artículo animando al lector a hacer clic.</p>
+                    <a href="#" class="btn">Leer más</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="contacto" class="section-contacto">
+        <div class="contacto-container">
+            <!-- Encabezado -->
+            <div class="contacto-header">
+                <h2>Contacto</h2>
+                <p>¿Tienes dudas o quieres más información? ¡Escríbenos!</p>
+            </div>
+
+            <!-- Contenido: formulario + redes -->
+            <div class="contacto-content">
+                <!-- Formulario -->
+                <div class="contacto-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+                <div class="contacto-redes">
+                    <h3>Síguenos</h3>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">TikTok</a></li>
+                        <li><a href="#">Telegram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      
+      <div class="footer-logo">
+        <a href="#hero">CreativaMente</a>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      
+      <div class="footer-copy">
+        <p>© 2025 CreativaMente. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
