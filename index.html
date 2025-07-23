@@ -9,8 +9,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-    rel="stylesheet"
-  />
+    rel="stylesheet" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" />
+
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -18,169 +22,170 @@
   <!-- HEADER -->
   <header>
     <nav class="navbar">
-      <!-- Aquí irá tu logo y navegación -->
-       <a href="#hero" class="logo">CreativaMente</a>
-
-       <button class="nav-toggle" aria-label="Abrir menú">☰</button>
-
-       <ul class="nav-links">
-            <li><a href="#hero">Inicio</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#cursos">Cursos</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
+      <a href="#hero" class="logo">
+        <img src="assets/img/Marca-Original.png" alt="Logo CreativaMente" />
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+      <ul class="nav-links">
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
     </nav>
   </header>
 
   <!-- MAIN CONTENT -->
   <main>
-    <!-- Sección HERO -->
+    <!-- HERO -->
     <section id="hero">
-        <div class="hero-content">
-            <h1>Bienvenido a CreativaMente</h1>
-            <p>Tu espacio para aprender a crear y emprender con creatividad.</p>
-            <a href="#cursos" class="btn">Ver cursos</a>
-        </div>
+      <div class="hero-content">
+        <h1>Despierta tu Creatividad, Impulsa tu Emprendimiento</h1>
+        <p>Aprende técnicas prácticas, paso a paso, para convertir tus ideas en proyectos reales.</p>
+        <a href="#cursos" class="btn">Empieza ahora</a>
+      </div>
     </section>
 
-    <!-- Secciones adicionales -->
+    <!-- SOBRE -->
     <section id="sobre" class="section-sobre">
-        <div class="sobre-container">
-            <!-- Imagen/Avatar -->
-            <div class="sobre-image">
-                <img src="assets/img/avatar.svg" alt="Avatar CreativaMente">
-            </div>
-            <!-- Texto de la marca -->
-            <div class="sobre-text">
-                <h2>Sobre CreativaMente</h2>
-                <p>
-                    <!-- Aquí iría tu texto: por ejemplo, la misión, visión y breve historia. -->
-                    Tu espacio para aprender a crear, diseñar y emprender con profesionalismo y creatividad.  
-                    <br><br>
-                    Desde nuestros inicios, nuestro objetivo ha sido…
-                </p>
-            </div>
+      <div class="sobre-container">
+        <div class="sobre-image">
+          <img src="assets/img/avatar.svg" alt="Avatar CreativaMente" />
         </div>
+        <div class="sobre-text">
+          <h2>Sobre CreativaMente</h2>
+          <p>
+            CreativaMente nace de la pasión por fusionar imaginación y profesionalismo, creando un espacio donde aprender es un viaje práctico y motivador. Aquí encontrarás rutas de aprendizaje progresivo, diseñadas para convertir tus ideas en proyectos reales.
+          </p>
+          <p>
+            La <strong>C</strong> de CreativaMente simboliza la fuerza de la <em>Creatividad</em> que da vida a cada iniciativa, mientras el rectángulo amarillo representa ese destello de inspiración que impulsa el cambio. Verás esta identidad visual en cada sección, recordándote que la innovación vive en los detalles.
+          </p>
+          <p>
+            Diseñamos contenidos adaptados a distintos públicos: versiones animadas y divertidas para niños de 5 a 9 años, con videos cortos y actividades gamificadas; y formatos más sobrios para emprendedores que buscan dominar herramientas digitales y estrategias de negocio. Cada módulo combina teoría, práctica y retos aplicados a la vida real.
+          </p>
+          <p>
+            Nuestros valores: excelencia educativa, innovación constante y un espíritu de servicio inspirado en la fe y la motivación. Con los recursos gratuitos mostramos nuestra autoridad, y con los cursos de pago profundizamos en metodologías comprobadas para que lleves tu proyecto al siguiente nivel.
+          </p>
+        </div>
+      </div>
     </section>
 
+    <!-- CURSOS -->
     <section id="cursos" class="section-cursos">
-        <div class="cursos-header">
-            <h2>Nuestros Cursos</h2>
-            <p>Explora nuestros recursos gratuitos y de pago para potenciar tu creatividad.</p>
-        </div>
-        <div class="cursos-grid">
-            <!-- EJEMPLO de tarjeta de curso -->
-             <article class="curso-card">
-                <img src="assets/img/curso1.jpg" alt="Curso 1">
-                <div class="curso-info">
-                    <h3>Título del Curso 1</h3>
-                    <p>Breve descripción que enganche y explique de qué trata el curso.</p>
-                    <a href="#" class="btn">Ver más</a>
-                </div>
-            </article>
-            <!-- Duplica <article> para cada curso -->
-        </div>
+      <div class="cursos-header">
+        <h2>Nuestros Cursos</h2>
+        <p>Explora nuestros recursos gratuitos y de pago para potenciar tu creatividad.</p>
+      </div>
+      <div class="cursos-grid">
+        <article class="curso-card">
+          <img src="assets/img/curso1.jpg" alt="Curso 1" />
+          <div class="curso-info">
+            <h3>Título del Curso 1</h3>
+            <p>Breve descripción que enganche y explique de qué trata el curso.</p>
+            <a href="#" class="btn">Ver más</a>
+          </div>
+        </article>
+        <!-- Duplica <article> para cada curso adicional -->
+      </div>
     </section>
 
+    <!-- BLOG -->
     <section id="blog" class="section-blog">
-        <div class="blog-header">
-            <h2>Últimos Artículos</h2>
-            <p>Descubre nuestros posts más recientes sobre creatividad y emprendimiento.</p>
-        </div>
-        <div class="blog-grid">
-            <!-- EJEMPLO de tarjeta de artículo -->
-            <article class="blog-card">
-                <img src="assets/img/blog1.jpg" alt="Título artículo 1">
-                <div class="blog-info">
-                    <h3>Título del Artículo 1</h3>
-                    <p>Un resumen breve que despierte el interés del lector para hacer clic.</p>
-                    <a href="#" class="btn">Leer más</a>
-                </div>
-            </article>
-            <!-- Artículo 2 -->
-            <article class="blog-card">
-                <img src="assets/img/blog2.jpg" alt="Artículo 2">
-                <div class="blog-info">
-                    <h3>Título del Artículo 2</h3>
-                    <p>Resumen breve del segundo artículo para despertar curiosidad.</p>
-                    <a href="#" class="btn">Leer más</a>
-                </div>
-            </article>
-
-            <!-- Artículo 3 -->
-            <article class="blog-card">
-                <img src="assets/img/blog3.jpg" alt="Artículo 3">
-                <div class="blog-info">
-                    <h3>Título del Artículo 3</h3>
-                    <p>Resumen breve del tercer artículo animando al lector a hacer clic.</p>
-                    <a href="#" class="btn">Leer más</a>
-                </div>
-            </article>
-        </div>
+      <div class="blog-header">
+        <h2>Últimos Artículos</h2>
+        <p>Descubre nuestros posts más recientes sobre creatividad y emprendimiento.</p>
+      </div>
+      <div class="blog-grid">
+        <article class="blog-card">
+          <img src="assets/img/Blog_1.jpg" alt="Fe y Emprendimiento" />
+          <div class="blog-info">
+            <h3>Fe y Emprendimiento: Claves para Mantenerte Firme en tu Propósito</h3>
+            <p>Descubre cómo tu fe puede ser el pilar que te impulse a persistir y triunfar como emprendedor.</p>
+            <a href="blog/fe-y-emprendimiento.html" class="btn">Leer más</a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <img src="assets/img/blog2.jpg" alt="Artículo 2" />
+          <div class="blog-info">
+            <h3>Título del Artículo 2</h3>
+            <p>Un resumen breve que despierte el interés del lector para hacer clic.</p>
+            <a href="#" class="btn">Leer más</a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <img src="assets/img/blog3.jpg" alt="Artículo 3" />
+          <div class="blog-info">
+            <h3>Título del Artículo 3</h3>
+            <p>Un resumen breve que despierte el interés del lector para hacer clic.</p>
+            <a href="#" class="btn">Leer más</a>
+          </div>
+        </article>
+        <!-- Más <article> para artículos 2, 3, etc. -->
+      </div>
     </section>
 
+    <!-- CONTACTO -->
     <section id="contacto" class="section-contacto">
-        <div class="contacto-container">
-            <!-- Encabezado -->
-            <div class="contacto-header">
-                <h2>Contacto</h2>
-                <p>¿Tienes dudas o quieres más información? ¡Escríbenos!</p>
-            </div>
-
-            <!-- Contenido: formulario + redes -->
-            <div class="contacto-content">
-                <!-- Formulario -->
-                <div class="contacto-form">
-                    <form action="https://formspree.io/f/xpwlpaoa" method="POST">
-                        <!-- Honeypot para bots -->
-                        <input type="text" name="_gotcha" style="display:none" />
-
-                        <!-- Si quieres redirigir a una “gracias” dentro de tu web, descomenta y ajusta la URL -->
-                        <!-- <input type="hidden" name="_next" value="https://matis2189.github.io/creativamente-web/#contacto?success=true"> -->
-
-                        <div class="form-group">
-                            <label for="nombre">Nombre</label>
-                            <input type="text" id="nombre" name="name" required />
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Correo electrónico</label>
-                            <input type="email" id="email" name="email" required />
-                        </div>
-                        <div class="form-group">
-                            <label for="mensaje">Mensaje</label>
-                            <textarea id="mensaje" name="message" rows="5" required></textarea>
-                        </div>
-
-                        <!-- Si quieres copia en tu correo, añade este campo y pon tu dirección -->
-                        <!-- <input type="hidden" name="_cc" value="tucorreo@creativamente.com"> -->
-
-                        <button type="submit" class="btn">Enviar Mensaje</button>
-                    </form>
-
-                </div>
-                <div class="contacto-redes">
-                    <h3>Síguenos</h3>
-                    <ul>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">TikTok</a></li>
-                        <li><a href="#">Telegram</a></li>
-                    </ul>
-                </div>
-            </div>
+      <div class="contacto-container">
+        <div class="contacto-header">
+          <h2>Contacto</h2>
+          <p>¿Tienes dudas o quieres más información? ¡Escríbenos!</p>
         </div>
+
+        <!-- Mensaje de éxito -->
+        <p id="contact-success" class="form-success" hidden>
+          ¡Gracias por tu mensaje! Te responderemos muy pronto.
+        </p>
+
+        <div class="contacto-content">
+          <div class="contacto-form">
+            <form action="https://formspree.io/f/xpwlpaoa" method="POST">
+              <!-- Redirección tras envío -->
+              <input
+                type="hidden"
+                name="_next"
+                value="https://github.com/Mati2189/creativamente-web#contacto?sent=true"
+              />
+              <!-- Honeypot anti‐spam -->
+              <input type="text" name="_gotcha" style="display:none" />
+
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="message" rows="5" required></textarea>
+              </div>
+
+              <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+          </div>
+
+          <div class="contacto-redes">
+            <h3>Síguenos</h3>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">TikTok</a></li>
+              <li><a href="#">Telegram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
-
-
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="footer-container">
-      
       <div class="footer-logo">
         <a href="#hero">CreativaMente</a>
       </div>
-
       <ul class="footer-links">
         <li><a href="#hero">Inicio</a></li>
         <li><a href="#sobre">Sobre</a></li>
@@ -188,13 +193,11 @@
         <li><a href="#blog">Blog</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
-      
       <div class="footer-copy">
         <p>© 2025 CreativaMente. Todos los derechos reservados.</p>
       </div>
     </div>
   </footer>
-
 
   <!-- JS -->
   <script src="js/main.js"></script>
